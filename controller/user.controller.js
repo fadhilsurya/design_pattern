@@ -1,6 +1,6 @@
 
-function testUserHealth(req, res) {
-    console.log('PING!!!!')
+function pingUserHealth(req, res) {
+    console.log('PONG!!!!')
 
     res.send('success')
     return
@@ -17,4 +17,4 @@ function testUserHealth(req, res) {
 
 // }
 
-module.exports = { User }
+module.exports = { pingUserHealth, }
