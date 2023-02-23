@@ -1,9 +1,7 @@
 const router = require('express').Router()
-const { User } = require('../../controller/user.controller')
-
-const dataUser = new User()
+const { pingUserHealth } = require('../../controller/user.controller')
 
 // we put all user controller here
-router.get('/health', dataUser.testUserHealth)
+router.get('/health', pingUserHealth)
 
 module.exports = router
